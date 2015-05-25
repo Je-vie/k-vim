@@ -47,7 +47,8 @@ highlight SyntasticErrorSign guifg=white guibg=black
 Bundle 'Valloric/YouCompleteMe'
 "youcompleteme  默认tab  s-tab 和自动补全冲突
 "let g:ycm_key_list_select_completion=['<c-n>']
-let g:ycm_key_list_select_completion = ['<Down>']
+"let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_key_list_select_completion = ['<tab>']
 "let g:ycm_key_list_previous_completion=['<c-p>']
 let g:ycm_key_list_previous_completion = ['<Up>']
 let g:ycm_complete_in_comments = 1  "在注释输入中也能补全
@@ -79,9 +80,9 @@ let g:ycm_filetype_blacklist = {
 Bundle 'SirVer/ultisnips'
 " 代码片段资源,需要学习
 " Snippets are separated from the engine. Add this if you want them:
-Bundle 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
+"Bundle 'honza/vim-snippets'
+"let g:UltiSnipsExpandTrigger = "<tab>"
+"let g:UltiSnipsJumpForwardTrigger = "<tab>"
 " 定义存放代码片段的文件夹 .vim/additional_snippets下，使用自定义和默认的，将会的到全局，有冲突的会提示
 let g:UltiSnipsSnippetDirectories=["additional_snippets", 'UltiSnips']
 
